@@ -1,0 +1,86 @@
+.slider {
+  margin: 0 auto;
+  width: 600px;
+  height: 485px;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.slider__title {
+  color: #f2f4f7;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 72px;
+  line-height: 83px;
+  text-transform: capitalize;
+  text-align: center;
+  margin-bottom: 15px;
+}
+.slider__subtitle {
+  color: #f2f4f7;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 21px;
+  text-transform: capitalize;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.slider__button {
+  width: 240px;
+  height: 53px;
+  margin-bottom: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 16px 32px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  text-transform: capitalize;
+  color: transparent;
+  -webkit-background-clip: text;
+          background-clip: text;
+  background-image: linear-gradient(92.82deg, #fc4060, #8061fd);
+  border: 2px solid;
+  -o-border-image: linear-gradient(113deg, #fc4060, #8061fd);
+     border-image: linear-gradient(113deg, #fc4060, #8061fd);
+  border-image-slice: 1;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+.slider__button:hover {
+  background-clip: unset;
+  color: #22282e;
+  cursor: pointer;
+}
+.slider__dots {
+  height: 16px;
+  width: 16px;
+  border: 5px solid rgba(196, 196, 196, 0.16);
+  border-radius: 50%;
+}
+.slider__dots--wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 30px;
+}
+.slider__dots--active {
+  border-color: #ffffff;
+}/*# sourceMappingURL=slider.css.map */

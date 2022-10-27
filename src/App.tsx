@@ -5,7 +5,7 @@ import "./app.scss";
 
 export const App = () => {
   return (
-    <div className="slider-wrapper">
+    <div className="wrapper">
       <Navbar />
       <Slider />
     </div>

@@ -10,13 +10,13 @@ export const Slider = () => {
         the right app to you.
       </h5>
       <button className="slider__button">Learn</button>
-      <div className="slider__dots--wrapper">
-        <div className="slider__dots"></div>
-        <div className="slider__dots"></div>
-        <div className="slider__dots slider__dots--active"></div>
-        <div className="slider__dots"></div>
-        <div className="slider__dots"></div>
-      </div>
+      <ul className="slider__dots--wrapper">
+        <li className="slider__dots"></li>
+        <li className="slider__dots"></li>
+        <li className="slider__dots slider__dots--active"></li>
+        <li className="slider__dots"></li>
+        <li className="slider__dots"></li>
+      </ul>
     </div>
   );
 };

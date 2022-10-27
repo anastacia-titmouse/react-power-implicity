@@ -70,6 +70,7 @@
   width: 16px;
   border: 5px solid rgba(196, 196, 196, 0.16);
   border-radius: 50%;
+  list-style: none;
 }
 .slider__dots--wrapper {
   display: -webkit-box;
@@ -80,6 +81,7 @@
       -ms-flex-direction: row;
           flex-direction: row;
   gap: 30px;
+  padding: 0;
 }
 .slider__dots--active {
   border-color: #ffffff;

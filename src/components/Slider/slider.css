@@ -1,7 +1,6 @@
 .slider {
   margin: 0 auto;
-  width: 600px;
-  height: 485px;
+  width: 60%;
   display: grid;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -10,6 +9,23 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  grid-template-rows: 1fr 0.5fr 1fr 1fr;
+  gap: 20px;
+}
+@media screen and (max-width: 767px) {
+  .slider {
+    gap: 18px;
+  }
+}
+@media screen and (max-width: 567px) {
+  .slider {
+    gap: 10px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .slider {
+    gap: 8px;
+  }
 }
 .slider__title {
   color: #f2f4f7;
@@ -19,7 +35,28 @@
   line-height: 83px;
   text-transform: capitalize;
   text-align: center;
-  margin-bottom: 15px;
+}
+@media screen and (max-width: 1023px) {
+  .slider__title {
+    font-size: 60px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .slider__title {
+    font-size: 50px;
+  }
+}
+@media screen and (max-width: 567px) {
+  .slider__title {
+    font-size: 35px;
+    line-height: 63px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .slider__title {
+    font-size: 30px;
+    line-height: 53px;
+  }
 }
 .slider__subtitle {
   color: #f2f4f7;
@@ -27,14 +64,29 @@
   font-weight: 300;
   font-size: 18px;
   line-height: 21px;
-  text-transform: capitalize;
   text-align: center;
-  margin-bottom: 50px;
+}
+@media screen and (max-width: 1023px) {
+  .slider__subtitle {
+    font-size: 15px;
+    line-height: 18px;
+  }
+}
+@media screen and (max-width: 567px) {
+  .slider__subtitle {
+    font-size: 12px;
+    line-height: 13px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .slider__subtitle {
+    font-size: 10px;
+    line-height: 10px;
+  }
 }
 .slider__button {
   width: 240px;
   height: 53px;
-  margin-bottom: 60px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -65,6 +117,16 @@
   color: #22282e;
   cursor: pointer;
 }
+@media screen and (max-width: 567px) {
+  .slider__button {
+    width: 220px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .slider__button {
+    width: 200px;
+  }
+}
 .slider__dots {
   height: 16px;
   width: 16px;
@@ -82,6 +144,7 @@
           flex-direction: row;
   gap: 30px;
   padding: 0;
+  margin-bottom: 100px;
 }
 .slider__dots--active {
   border-color: #ffffff;

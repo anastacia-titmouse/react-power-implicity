@@ -2,12 +2,25 @@
 
 .slider {
   margin: 0 auto;
-  width: 600px;
-  height: 485px;
+  width: 60%;
   display: grid;
   justify-content: center;
   justify-items: center;
   align-items: center;
+  grid-template-rows: 1fr 0.5fr 1fr 1fr;
+  gap: 20px;
+
+  @include mediaTablet {
+    gap: 18px;
+  }
+
+  @include mediaMobileLarge {
+    gap: 10px;
+  }
+
+  @include mediaIphone {
+    gap: 8px;
+  }
 
   &__title {
     color: #f2f4f7;
@@ -17,7 +30,24 @@
     line-height: 83px;
     text-transform: capitalize;
     text-align: center;
-    margin-bottom: 15px;
+
+    @include mediaNotebook {
+      font-size: 60px;
+    }
+
+    @include mediaTablet {
+      font-size: 50px;
+    }
+
+    @include mediaMobileLarge {
+      font-size: 35px;
+      line-height: 63px;
+    }
+
+    @include mediaIphone {
+      font-size: 30px;
+      line-height: 53px;
+    }
   }
 
   &__subtitle {
@@ -26,15 +56,27 @@
     font-weight: 300;
     font-size: 18px;
     line-height: 21px;
-    text-transform: capitalize;
     text-align: center;
-    margin-bottom: 50px;
+
+    @include mediaNotebook {
+      font-size: 15px;
+      line-height: 18px;
+    }
+
+    @include mediaMobileLarge {
+      font-size: 12px;
+      line-height: 13px;
+    }
+
+    @include mediaIphone {
+      font-size: 10px;
+      line-height: 10px;
+    }
   }
 
   &__button {
     width: 240px;
     height: 53px;
-    margin-bottom: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -56,6 +98,14 @@
       color: #22282e;
       cursor: pointer;
     }
+
+    @include mediaMobileLarge {
+      width: 220px;
+    }
+
+    @include mediaIphone {
+      width: 200px;
+    }
   }
 
   &__dots {
@@ -64,6 +114,7 @@
       flex-direction: row;
       gap: 30px;
       padding: 0;
+      margin-bottom: 100px;
     }
     &--active {
       border-color: #ffffff;

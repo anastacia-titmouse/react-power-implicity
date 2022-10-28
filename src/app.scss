@@ -11,7 +11,22 @@
   display: grid;
   grid-template-rows: 110px auto auto;
   row-gap: 170px;
-  max-width: 1410px;
-  margin: 0 auto;
   padding: 0 15px;
+  margin: 20px auto 20px auto;
+
+  @include container;
+
+  @include mediaNotebook {
+    row-gap: 130px;
+  }
+
+  @include mediaMobileLarge {
+    row-gap: 70px;
+    grid-template-rows: 100px auto auto;
+  }
+
+  @include mediaIphone {
+    row-gap: 30px;
+    grid-template-rows: 80px auto auto;
+  }
 }

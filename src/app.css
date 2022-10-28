@@ -7,7 +7,53 @@
   display: grid;
   grid-template-rows: 110px auto auto;
   row-gap: 170px;
-  max-width: 1410px;
-  margin: 0 auto;
   padding: 0 15px;
+  margin: 20px auto 20px auto;
+}
+@media screen and (max-width: 1023px) {
+  .wrapper {
+    width: 80%;
+    height: 90%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .wrapper {
+    width: 80%;
+    height: 90%;
+  }
+}
+@media screen and (max-width: 567px) {
+  .wrapper {
+    width: 80%;
+    height: 90%;
+  }
+}
+@media screen and (max-width: 425px) {
+  .wrapper {
+    width: 80%;
+    height: 90%;
+  }
+}
+@media screen and (max-width: 375px) {
+  .wrapper {
+    width: 80%;
+    height: 90%;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .wrapper {
+    row-gap: 130px;
+  }
+}
+@media screen and (max-width: 567px) {
+  .wrapper {
+    row-gap: 70px;
+    grid-template-rows: 100px auto auto;
+  }
+}
+@media screen and (max-width: 375px) {
+  .wrapper {
+    row-gap: 30px;
+    grid-template-rows: 80px auto auto;
+  }
 }/*# sourceMappingURL=app.css.map */

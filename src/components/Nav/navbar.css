@@ -5,17 +5,70 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 30px 15px;
+  padding: 0 15px;
+}
+@media screen and (max-width: 567px) {
+  .navbar {
+    grid-template-columns: 0.5fr 1fr;
+    padding: 0;
+  }
+}
+@media screen and (max-width: 375px) {
+  .navbar {
+    padding: 0;
+    grid-template-columns: 0.5fr 1fr;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .navbar__logo {
+    width: 90%;
+    height: 90%;
+  }
+}
+@media screen and (max-width: 567px) {
+  .navbar__logo {
+    width: 80%;
+    height: 80%;
+  }
+}
+@media screen and (max-width: 375px) {
+  .navbar__logo {
+    width: 70%;
+    height: 70%;
+  }
 }
 .navbar__link {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
   text-decoration: none;
   color: #a0a3a7;
+}
+@media screen and (max-width: 1023px) {
+  .navbar__link {
+    font-size: 12px;
+  }
 }
 .navbar__link--wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   gap: 65px;
+}
+@media screen and (max-width: 1023px) {
+  .navbar__link--wrapper {
+    gap: 55px;
+  }
+}
+@media screen and (max-width: 567px) {
+  .navbar__link--wrapper {
+    display: none;
+  }
+}
+@media screen and (max-width: 375px) {
+  .navbar__link--wrapper {
+    display: none;
+  }
 }
 .navbar__link--logo {
   justify-self: start;
@@ -39,4 +92,50 @@
 .navbar__button:hover {
   cursor: pointer;
   background: #c8cbd0;
+}
+@media screen and (max-width: 767px) {
+  .navbar__button {
+    display: none;
+  }
+}
+@media screen and (max-width: 567px) {
+  .navbar__button {
+    display: none;
+  }
+}
+.navbar__burger {
+  display: none;
+  outline: none;
+  width: 65px;
+  height: 40px;
+  background: transparent;
+  padding: 0;
+}
+@media screen and (max-width: 767px) {
+  .navbar__burger {
+    display: block;
+    justify-self: right;
+    -ms-flex-item-align: center;
+        align-self: center;
+  }
+}
+@media screen and (max-width: 567px) {
+  .navbar__burger {
+    display: block;
+    justify-self: right;
+    -ms-flex-item-align: center;
+        align-self: center;
+    width: 55px;
+    height: 35px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .navbar__burger {
+    display: block;
+    justify-self: right;
+    -ms-flex-item-align: center;
+        align-self: center;
+    width: 40px;
+    height: 30px;
+  }
 }/*# sourceMappingURL=navbar.css.map */

@@ -5,14 +5,61 @@
   grid-template-columns: 1fr 5fr 1fr;
   justify-items: center;
   align-items: center;
-  padding: 30px 15px;
+  padding: 0 15px;
+
+  @include mediaMobileLarge {
+    grid-template-columns: 0.5fr 1fr;
+    padding: 0;
+  }
+
+  @include mediaIphone {
+    padding: 0;
+    grid-template-columns: 0.5fr 1fr;
+  }
+
+  &__logo {
+    @include mediaNotebook {
+      width: 90%;
+      height: 90%;
+    }
+
+    @include mediaMobileLarge {
+      width: 80%;
+      height: 80%;
+    }
+
+    @include mediaIphone {
+      width: 70%;
+      height: 70%;
+    }
+  }
 
   &__link {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
     text-decoration: none;
     color: #a0a3a7;
+
+    @include mediaNotebook {
+      font-size: 12px;
+    }
+
     &--wrapper {
       display: flex;
       gap: 65px;
+
+      @include mediaNotebook {
+        gap: 55px;
+      }
+
+      @include mediaMobileLarge {
+        display: none;
+      }
+
+      @include mediaIphone {
+        display: none;
+      }
     }
 
     &--logo {
@@ -39,6 +86,45 @@
     &:hover {
       cursor: pointer;
       background: #c8cbd0;
+    }
+
+    @include mediaTablet {
+      display: none;
+    }
+
+    @include mediaMobileLarge {
+      display: none;
+    }
+  }
+
+  &__burger {
+    display: none;
+    outline: none;
+    width: 65px;
+    height: 40px;
+    background: transparent;
+    padding: 0;
+
+    @include mediaTablet {
+      display: block;
+      justify-self: right;
+      align-self: center;
+    }
+
+    @include mediaMobileLarge {
+      display: block;
+      justify-self: right;
+      align-self: center;
+      width: 55px;
+      height: 35px;
+    }
+
+    @include mediaIphone {
+      display: block;
+      justify-self: right;
+      align-self: center;
+      width: 40px;
+      height: 30px;
     }
   }
 }

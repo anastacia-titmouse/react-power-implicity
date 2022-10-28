@@ -69,19 +69,18 @@
 @media screen and (max-width: 1023px) {
   .slider__subtitle {
     font-size: 15px;
-    line-height: 18px;
   }
 }
 @media screen and (max-width: 567px) {
   .slider__subtitle {
     font-size: 12px;
-    line-height: 13px;
+    line-height: 18px;
   }
 }
 @media screen and (max-width: 375px) {
   .slider__subtitle {
     font-size: 10px;
-    line-height: 10px;
+    line-height: 15px;
   }
 }
 .slider__button {
@@ -144,7 +143,6 @@
           flex-direction: row;
   gap: 30px;
   padding: 0;
-  margin-bottom: 100px;
 }
 .slider__dots--active {
   border-color: #ffffff;

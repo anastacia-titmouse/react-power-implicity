@@ -60,17 +60,16 @@
 
     @include mediaNotebook {
       font-size: 15px;
-      line-height: 18px;
     }
 
     @include mediaMobileLarge {
       font-size: 12px;
-      line-height: 13px;
+      line-height: 18px;
     }
 
     @include mediaIphone {
       font-size: 10px;
-      line-height: 10px;
+      line-height: 15px;
     }
   }
 
@@ -114,7 +113,6 @@
       flex-direction: row;
       gap: 30px;
       padding: 0;
-      margin-bottom: 100px;
     }
     &--active {
       border-color: #ffffff;
